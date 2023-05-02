@@ -1,0 +1,168 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  background: #fae9fb;
+  position: absolute;
+}
+body::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(11 148 70);
+  clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
+}
+.container{
+  max-width: 1050px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+.content .image-box{
+  max-width: 55%;
+}
+.content .image-box img{
+  width: 100%;
+}
+.content .topic{
+  font-size: 34px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Zilla Slab', serif;
+  color: rgb(11 148 70);
+}
+.content form{
+  width: 40%;
+  margin-right: 30px;
+}
+.content .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.content .input-box input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color: #ba24c2;
+  background-color: #fff;
+}
+.content .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: rgb(11 148 70);
+  background: #fff;
+}
+.content .input-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #ba24c2;
+  background: #fff;
+}
+.content .message-box{
+  min-height: 100px;
+  position: relative;
+}
+.content .message-box textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus{
+  border-color: transparent;
+  background-color: #fff;
+}
+.content .message-box label{
+  position: absolute;
+  font-size: 16px;
+  color: #636c72;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label{
+  left: 12px;
+  top: -10px;
+  color: #ba24c2;
+  font-size: 14px;
+  background: #fff;
+}
+.content .input-box input[type="submit"]{
+  color: #fff;
+  background: #CB425A;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover{
+  border: rgba(11, 148, 70, 0.85);
+  
+  background-color: transparent;
+}
+@media (max-width:1000px) {
+  .content .image-box{
+    max-width: 70%;
+  }
+  .content{
+    padding: 10px 0;
+  }
+}
+@media (max-width:900px) {
+  .content .image-box{
+    display: none;
+  }
+  .content form{
+    width: 100%;
+    margin-left: 30px;
+  }
+}
