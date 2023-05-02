@@ -86,9 +86,6 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
-
-
 #header {
   top: 50px;
   height: 70px;
@@ -201,11 +198,13 @@ h6 {
   padding: 0;
   text-align: center;
   list-style: none;
+  
 }
 
 .navbar li {
   display: flex;
   position: relative;
+  
 }
 
 .navbar .nav-link a {
@@ -213,16 +212,13 @@ h6 {
   font-weight: 500;
 }
 
-#navbar > ul > li:nth-child(1) > a:hover,
-#navbar > ul > li:nth-child(2) > a:hover,
-#navbar > ul > li:nth-child(3) > a:hover,
+
+
+#navbar > ul > li:nth-child(1) > a:hover
+#navbar > ul > li:nth-child(2) > a:hover
+#navbar > ul > li:nth-child(3) > a:hover
 #navbar > ul > li:nth-child(4) > a:hover {
   color: #0B9446;
-}
-
-.container-fluid {
-  display: flex;
-  justify-content: center;
 }
 
 .navbar .dropdown ul {
@@ -288,6 +284,13 @@ h6 {
 
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #navbar {
+    margin: 0 auto;
+    max-width: 992px;
   }
 }
 
