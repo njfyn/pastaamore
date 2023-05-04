@@ -278,11 +278,11 @@ h6 {
 }
 
 @media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
+   .dropdown .dropdown ul {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
@@ -290,10 +290,22 @@ h6 {
 @media screen and (min-width: 992px) {
   .navbar {
     margin: 0 auto;
-    max-width: 992px;
+    padding-right: 4.5em;
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .navbar ul{
+    margin: 0 auto;
+    padding-right: 5.43em;
+    justify-content: center;
+  }
+}
+
+
+
+
 
 
 
@@ -323,6 +335,8 @@ h6 {
   .navbar ul {
     display: none;
   }
+
+  
 }
 
 .navbar-mobile {
@@ -940,6 +954,7 @@ section {
   background: #fff;
   border: 2px solid #0B9446;
   border-radius: 50px;
+  margin: 10px;
 }
 
 .menu #menu-flters li:hover,
