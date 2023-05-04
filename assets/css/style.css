@@ -16,9 +16,7 @@ h5,
 h6 {
   font-family: 'Zilla Slab', serif;
 }
-#navbar > ul {
-  background: none;
-}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -187,38 +185,18 @@ h6 {
 /**
 * Desktop Navigation 
 */
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.navbar {
-  padding: 0;
-}
 
 .navbar ul {
-  margin: 0;
-  padding: 0;
+
   font-weight: 500;
   list-style: none;
   letter-spacing: 1px;
-  
-}
-
-.navbar li {
-  display: flex;
-  position: relative;
-  
 }
 
 .navbar .nav-link a {
   color: #fffefa;
   font-weight: 500;
 }
-
-
 
 #navbar > ul > li:nth-child(1) > a:hover
 #navbar > ul > li:nth-child(2) > a:hover
@@ -246,14 +224,8 @@ nav ul {
   min-width: 200px;
 }
 
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #433f39;
-}
 
-.navbar .dropdown ul a i {
+.dropdown ul a i {
   font-size: 12px;
 }
 
@@ -283,33 +255,18 @@ nav ul {
 }
 
 @media (max-width: 1366px) {
-   .dropdown .dropdown ul {
+   .navbar-dropdown .dropdown ul {
     left: -90%;
   }
 
-  .dropdown .dropdown:hover>ul {
+  .navbar-dropdown:hover>ul {
     left: -100%;
   }
-}
 
-@media screen and (min-width: 992px) {
-  .navbar {
-    margin: 0 auto;
-    justify-content: center;
+  .bi.bi-x {
+    display: block;
   }
 }
-
-@media screen and (max-width: 1199px) {
-  .navbar ul{
-    margin: 0 auto;
-    justify-content: center;
-  }
-}
-
-
-
-
-
 
 
 /**
