@@ -130,10 +130,8 @@ h6 {
 
 
 #header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-  min-width: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 /*--------------------------------------------------------------
@@ -189,6 +187,11 @@ h6 {
 /**
 * Desktop Navigation 
 */
+nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 
 .navbar {
   padding: 0;
@@ -197,7 +200,7 @@ h6 {
 .navbar ul {
   margin: 0;
   padding: 0;
-  text-align: center;
+
   list-style: none;
   
 }
@@ -290,7 +293,6 @@ h6 {
 @media screen and (min-width: 992px) {
   .navbar {
     margin: 0 auto;
-    padding-right: 4.5em;
     justify-content: center;
   }
 }
@@ -298,7 +300,6 @@ h6 {
 @media screen and (max-width: 1199px) {
   .navbar ul{
     margin: 0 auto;
-    padding-right: 5.43em;
     justify-content: center;
   }
 }
